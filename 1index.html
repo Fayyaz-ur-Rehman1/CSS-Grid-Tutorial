@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+         .container{
+    background-color: black;
+    width: 700px ;
+    margin: 70px 0 0 50px;
+   }      
+    .itmes1{
+        background-color: cadetblue;
+        grid-row:  2/3 ;
+        grid-column:1/4 ;
+        grid-column: 1/-1;
+         grid-row: 1/-1;
+      }
+     
+      .itmes2{
+        background-color:lightyellow;
+        grid-column: 1/-1;
+      }
+   
+      .itmes3{
+        background-color: lightcoral;
+      }
+   
+      .itmes4{
+        background-color: lime;
+        grid-column: 1/5
+      }
+   
+      .itmes5{
+        background-color:burlywood;
+        grid-column: 1  /2 ;
+        grid-area: 1/2;
+        grid-column: 1/span 5 ;
+      }
+   
+      .itmes6{
+        background-color: lightpink;
+      }
+      .container{
+        display: grid;
+       grid-template-columns: 100px  100px 100px ;
+       grid-template-rows: 100px 100px 100px;
+       grid-row-gap: 30px ;
+       grid-column-gap: 50px ;
+       grid-gap: 20px;
+     
+      }
+      </style>
+</head>
+<body>
+    <div class="container">
+    <div class="itmes1">one</div>
+    <div class="itmes2">two</div>
+    <div class="itmes3">three</div>
+    <div class="itmes4">four</div>
+    <div class="itmes5">five</div>
+    <div class="itmes6">six</div>
+</body>
+</html>
