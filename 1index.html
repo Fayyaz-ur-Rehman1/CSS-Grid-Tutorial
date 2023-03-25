@@ -9,15 +9,12 @@
    }      
     .itmes1{
         background-color: cadetblue;
-        grid-row:  2/3 ;
-        grid-column:1/4 ;
-        grid-column: 1/-1;
-         grid-row: 1/-1;
+      
       }
      
       .itmes2{
         background-color:lightyellow;
-        grid-column: 1/-1;
+     
       }
    
       .itmes3{
@@ -26,14 +23,12 @@
    
       .itmes4{
         background-color: lime;
-        grid-column: 1/5
+      
       }
    
       .itmes5{
         background-color:burlywood;
-        grid-column: 1  /2 ;
-        grid-area: 1/2;
-        grid-column: 1/span 5 ;
+       
       }
    
       .itmes6{
@@ -41,8 +36,8 @@
       }
       .container{
         display: grid;
-       grid-template-columns: 100px  100px 100px ;
-       grid-template-rows: 100px 100px 100px;
+       grid-template-columns: repeat(3,[] 100px);
+       grid-template-rows: repeat(3,100px);
        grid-row-gap: 30px ;
        grid-column-gap: 50px ;
        grid-gap: 20px;
